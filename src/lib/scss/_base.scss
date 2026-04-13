@@ -1,0 +1,50 @@
+a {
+	display: inline-block;
+	color: var(--clr-hyperlink);
+	transition: opacity 0.1s ease-in-out;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+button {
+	color: inherit;
+	cursor: pointer;
+}
+
+input,
+textarea {
+	width: 100%;
+	color: inherit;
+	transition:
+		color 0.1s ease-in-out,
+		border-color 0.1s ease-in-out;
+
+	&::placeholder {
+		transition: color 0.1s ease-in-out;
+	}
+}
+
+select {
+	width: 100%;
+	color: inherit;
+}
+
+label {
+	cursor: pointer;
+}
+
+fieldset {
+	padding: 0;
+	border: 0;
+}
+
+hr {
+	width: 100%;
+}
+
+:focus-visible {
+	outline: solid 2px var(--clr-focus-outline);
+	outline-offset: 2px;
+}

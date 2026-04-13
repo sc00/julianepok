@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'GT America';
+	font-weight: 400;
+	font-display: swap;
+	src: url('/assets/gt-america-regular.otf') format('opentype');
+}
+
+body {
+	font-family: 'GT America';
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+}
