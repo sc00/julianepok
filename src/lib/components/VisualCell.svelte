@@ -8,24 +8,22 @@
 	 * TYPES
 	 */
 	interface Props {
-		tag?: string;
 		children?: Snippet;
 	}
 
 	/**
 	 * PROPS
 	 */
-	let { tag = 'div', children }: Props = $props();
+	let { children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-main-header">
+<div class="v-cell">
 	{@render children?.()}
-</svelte:element>
+</div>
 
 <style lang="scss">
-	.l-main-header {
-		position: fixed;
-		inset: auto 0 0 0;
-		display: grid;
+	.v-cell {
+		padding: 0.75rem 0;
+		text-transform: lowercase;
 	}
 </style>

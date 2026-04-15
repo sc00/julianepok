@@ -18,14 +18,12 @@
 	let { tag = 'div', children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-main-header">
+<svelte:element this={tag} class="l-main-nav">
 	{@render children?.()}
 </svelte:element>
 
 <style lang="scss">
-	.l-main-header {
-		position: fixed;
-		inset: auto 0 0 0;
-		display: grid;
+	.l-main-nav {
+		margin: 0 1rem 1rem 1rem;
 	}
 </style>

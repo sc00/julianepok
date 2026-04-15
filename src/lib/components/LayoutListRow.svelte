@@ -18,14 +18,13 @@
 	let { tag = 'div', children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-main-header">
+<svelte:element this={tag} class="l-list-row">
 	{@render children?.()}
 </svelte:element>
 
 <style lang="scss">
-	.l-main-header {
-		position: fixed;
-		inset: auto 0 0 0;
+	.l-list-row {
 		display: grid;
+		grid-template-columns: 10rem 3fr 2fr 3fr 2fr;
 	}
 </style>

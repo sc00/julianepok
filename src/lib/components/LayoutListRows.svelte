@@ -9,7 +9,7 @@
 	 */
 	interface Props {
 		tag?: string;
-		children?: Snippet;
+		children: Snippet;
 	}
 
 	/**
@@ -18,14 +18,12 @@
 	let { tag = 'div', children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-main-header">
-	{@render children?.()}
+<svelte:element this={tag} class="l-list-rows">
+	{@render children()}
 </svelte:element>
 
 <style lang="scss">
-	.l-main-header {
-		position: fixed;
-		inset: auto 0 0 0;
+	.l-list-rows {
 		display: grid;
 	}
 </style>

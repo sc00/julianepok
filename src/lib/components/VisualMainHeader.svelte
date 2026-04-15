@@ -17,13 +17,12 @@
 	let { children }: Props = $props();
 </script>
 
-<nav class="v-main-header">
+<div class="v-main-header">
 	{@render children?.()}
-</nav>
+</div>
 
 <style lang="scss">
 	.v-main-header {
-		padding: 0.5rem 4rem 0.75rem;
-		border: solid thin var(--clr-text);
+		background-color: var(--clr-body-background);
 	}
 </style>

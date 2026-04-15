@@ -1,6 +1,10 @@
+body {
+	background-color: var(--clr-body-background);
+}
+
 a {
 	display: inline-block;
-	color: var(--clr-hyperlink);
+	color: inherit;
 	transition: opacity 0.1s ease-in-out;
 }
 

@@ -30,8 +30,8 @@
 		text-decoration: none;
 
 		&:hover {
-			color: var(--clr-text-contrast);
-			background-color: var(--clr-text);
+			color: var(--clr-body-text-contrast);
+			background-color: var(--clr-body-text);
 		}
 	}
 </style>
