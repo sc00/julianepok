@@ -23,7 +23,7 @@
 
 <style lang="scss">
 	.v-main-nav {
-		padding: 0.5rem 4rem 0.75rem;
+		padding: 0.5rem var(--spacing-list-indent) 0.75rem;
 		border: solid thin var(--clr-body-text);
 	}
 </style>

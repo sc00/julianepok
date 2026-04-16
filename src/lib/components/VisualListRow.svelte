@@ -2,7 +2,7 @@
 	/**
 	 * IMPORTS
 	 */
-	import type { RouteId } from '$app/types';
+	import type { Pathname } from '$app/types';
 	import type { Snippet } from 'svelte';
 	import { resolve } from '$app/paths';
 
@@ -11,7 +11,7 @@
 	 */
 	interface Props {
 		children?: Snippet;
-		href: RouteId;
+		href: Pathname;
 	}
 
 	/**
@@ -26,7 +26,8 @@
 
 <style lang="scss">
 	.v-list-row {
-		padding: 0 4rem;
+		padding: 0.75rem var(--spacing-list-indent);
+		text-transform: lowercase;
 		text-decoration: none;
 		border: solid thin var(--clr-body-text);
 

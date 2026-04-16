@@ -25,6 +25,7 @@
 <style lang="scss">
 	.l-list-row {
 		display: grid;
-		grid-template-columns: 6.5rem 5fr 3fr 4fr 3fr;
+		grid-template-columns: minmax(5rem, 2fr) 8fr 5fr 7fr 5fr;
+		gap: 1rem;
 	}
 </style>

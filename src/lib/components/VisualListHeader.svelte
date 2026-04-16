@@ -17,6 +17,13 @@
 	let { children }: Props = $props();
 </script>
 
-<div class="v-cell">
+<header class="v-list-header">
 	{@render children?.()}
-</div>
+</header>
+
+<style lang="scss">
+	.v-list-header {
+		padding: 0 var(--spacing-list-indent);
+		text-transform: uppercase;
+	}
+</style>
