@@ -7,6 +7,7 @@
 	import VisualCell from '$lib/components/VisualCell.svelte';
 	import VisualListRow from '$lib/components/VisualListRow.svelte';
 	import LayoutListRows from '$lib/components/LayoutListRows.svelte';
+	import CompositionParseContent from '$lib/components/CompositionParseContent.svelte';
 </script>
 
 <LayoutListRows>
@@ -14,7 +15,7 @@
 		<VisualListRow href="/portfolio/{handle}">
 			<LayoutListRow>
 				<VisualCell>{year}</VisualCell>
-				<VisualCell>{title}</VisualCell>
+				<VisualCell><CompositionParseContent content={title} /></VisualCell>
 				<VisualCell>{type}</VisualCell>
 				<VisualCell>{medium}</VisualCell>
 				<VisualCell>{location}</VisualCell>

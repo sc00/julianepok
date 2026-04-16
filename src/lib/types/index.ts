@@ -4,3 +4,8 @@ export interface NavItem {
 	href: Pathname;
 	text: string;
 }
+
+export interface Token {
+	type: string;
+	content: string;
+}

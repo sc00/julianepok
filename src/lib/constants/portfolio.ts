@@ -1,35 +1,35 @@
 export const portfolio = [
 	{
 		year: '2026',
-		title: 'Between Two Sells1',
+		title: 'Between Two Sells[sup]1[/sup]',
 		type: 'Monograph',
 		medium: 'Arch File Folder',
 		location: 'TAS (Publication)'
 	},
 	{
 		year: '2026',
-		title: 'Une Piscine1',
+		title: 'Une Piscine[sup]1[/sup]',
 		type: 'Installation',
 		medium: 'Neon Light Tubes / Aluminum',
 		location: 'Louvre (Paris)'
 	},
 	{
 		year: '2026',
-		title: 'The Fresh Taste of Apple in My Mouth1',
+		title: 'The Fresh Taste of Apple in My Mouth[sup]1[/sup]',
 		type: 'Solo Exhibition',
 		medium: 'Mixed Media',
 		location: 'TAS (Nicosia)'
 	},
 	{
 		year: '2026',
-		title: 'The Rest Is Silence1',
+		title: 'The Rest Is Silence[sup]1[/sup]',
 		type: 'Solo Exhibition',
 		medium: 'Mixed Media',
 		location: 'TAS (Athens)'
 	},
 	{
 		year: '2026',
-		title: 'Please God Save Us All1',
+		title: 'Please God Save Us All[sup]1[/sup]',
 		type: 'Series',
 		medium: 'Gas Discharge Tubes / Aluminum',
 		location: 'TAS (Vienna)'
