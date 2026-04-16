@@ -1,5 +1,6 @@
 export const portfolio = [
 	{
+		handle: 'between-two-sells',
 		year: '2026',
 		title: 'Between Two Sells[sup]1[/sup]',
 		type: 'Monograph',
@@ -7,6 +8,7 @@ export const portfolio = [
 		location: 'TAS (Publication)'
 	},
 	{
+		handle: 'une-piscine',
 		year: '2026',
 		title: 'Une Piscine[sup]1[/sup]',
 		type: 'Installation',
@@ -14,6 +16,7 @@ export const portfolio = [
 		location: 'Louvre (Paris)'
 	},
 	{
+		handle: 'the-fresh-taste-of-apple-in-my-mouth',
 		year: '2026',
 		title: 'The Fresh Taste of Apple in My Mouth[sup]1[/sup]',
 		type: 'Solo Exhibition',
@@ -21,6 +24,7 @@ export const portfolio = [
 		location: 'TAS (Nicosia)'
 	},
 	{
+		handle: 'the-rest-is-silence',
 		year: '2026',
 		title: 'The Rest Is Silence[sup]1[/sup]',
 		type: 'Solo Exhibition',
@@ -28,6 +32,7 @@ export const portfolio = [
 		location: 'TAS (Athens)'
 	},
 	{
+		handle: 'please-god-save-us-all',
 		year: '2026',
 		title: 'Please God Save Us All[sup]1[/sup]',
 		type: 'Series',
@@ -35,6 +40,7 @@ export const portfolio = [
 		location: 'TAS (Vienna)'
 	},
 	{
+		handle: 'aphrodisia',
 		year: '2026',
 		title: 'Aphrodisia',
 		type: 'Solo Exhibition',
@@ -42,6 +48,7 @@ export const portfolio = [
 		location: 'Private Collection (Nicosia)'
 	},
 	{
+		handle: 'meer-als-alles-andere',
 		year: '2025',
 		title: 'Meer als alles andere',
 		type: 'Series',
@@ -49,6 +56,7 @@ export const portfolio = [
 		location: 'TAS (Vienna)'
 	},
 	{
+		handle: 'balance-of-force',
 		year: '2025',
 		title: 'Balance of Force',
 		type: 'Solo Exhibition',
@@ -56,6 +64,7 @@ export const portfolio = [
 		location: 'Private Collection (Bregenz)'
 	},
 	{
+		handle: 'hillside-headstone',
 		year: '2024',
 		title: 'Hillside Headstone',
 		type: 'Installation',
@@ -63,6 +72,7 @@ export const portfolio = [
 		location: 'TAS (Vienna)'
 	},
 	{
+		handle: 'corpus-one',
 		year: '2024',
 		title: 'Corpus One',
 		type: 'Solo Exhibition',
@@ -70,6 +80,7 @@ export const portfolio = [
 		location: 'Loos Haus (Vienna)'
 	},
 	{
+		handle: 'heaven-holds-the-faithfull-departed',
 		year: '2024',
 		title: 'Heaven Holds the Faithfull Departed',
 		type: 'Solo Exhibition',
@@ -77,6 +88,7 @@ export const portfolio = [
 		location: 'Art Week (Berlin)'
 	},
 	{
+		handle: 'forver-paintings',
 		year: '2024',
 		title: 'Forver Paintings',
 		type: 'Series',
@@ -84,6 +96,7 @@ export const portfolio = [
 		location: 'Private Collection (Norway)'
 	},
 	{
+		handle: 'where-can-i-meet-you',
 		year: '2024',
 		title: 'Where Can I Meet You',
 		type: 'Solo Exhibition',
@@ -91,6 +104,7 @@ export const portfolio = [
 		location: 'TAS (Vienna)'
 	},
 	{
+		handle: 'cash-cum-and-thunderstorms-pt-ii',
 		year: '2023',
 		title: 'Cash, Cum and Thunderstorms Pt II',
 		type: 'Solo Exhibition',
@@ -98,6 +112,7 @@ export const portfolio = [
 		location: 'TAS (Vienna)'
 	},
 	{
+		handle: 'cash-cum-and-thunderstorms-pt-i',
 		year: '2023',
 		title: 'Cash, Cum and Thunderstorms Pt I',
 		type: 'Solo Exhibition',
@@ -105,6 +120,7 @@ export const portfolio = [
 		location: 'TAS (Lefkara)'
 	},
 	{
+		handle: 'soulful-hardcore',
 		year: '2023',
 		title: 'Soulful Hardcore',
 		type: 'Solo Exhibition',
@@ -112,6 +128,7 @@ export const portfolio = [
 		location: 'TAS (Lefkara)'
 	},
 	{
+		handle: 'affirmation-for-angelina',
 		year: '2023',
 		title: 'Affirmation for Angelina',
 		type: 'Installatin',
@@ -119,6 +136,7 @@ export const portfolio = [
 		location: 'Private Collection (Limassol)'
 	},
 	{
+		handle: 'chamapgne Supernova',
 		year: '2022',
 		title: 'Chamapgne Supernova',
 		type: 'Solo Exhibition',
@@ -126,6 +144,7 @@ export const portfolio = [
 		location: 'Atelier (Vienna)'
 	},
 	{
+		handle: 'the-spirit-of-exctasy',
 		year: '2022',
 		title: 'The Spirit of Exctasy',
 		type: 'Solo Exhibition',
@@ -133,6 +152,7 @@ export const portfolio = [
 		location: 'Atelier (Vienna)'
 	},
 	{
+		handle: 'as-a-hole',
 		year: '2022',
 		title: 'As a Hole',
 		type: 'Solo Exhibition',
@@ -140,6 +160,7 @@ export const portfolio = [
 		location: 'Atelier (Vienna)'
 	},
 	{
+		handle: 'everything-i-love-for-ever',
 		year: '2021',
 		title: 'Everything I Love, For Ever',
 		type: 'Series',
@@ -147,6 +168,7 @@ export const portfolio = [
 		location: 'Private Collection (Velden)'
 	},
 	{
+		handle: 'the-refelction-of-our-knowledge',
 		year: '2020',
 		title: 'The Refelction of Our Knowledge',
 		type: 'Installation',
@@ -154,6 +176,7 @@ export const portfolio = [
 		location: 'Private Collection (Cologne)'
 	},
 	{
+		handle: 'animus',
 		year: '2019',
 		title: 'Animus',
 		type: 'Solo Exhibition',
@@ -161,6 +184,7 @@ export const portfolio = [
 		location: 'FJK Suite (Vienna)'
 	},
 	{
+		handle: 'wet-storage-oyster-culter',
 		year: '2019',
 		title: 'Wet Storage Oyster Culter',
 		type: 'Solo Exhibition',
@@ -168,6 +192,7 @@ export const portfolio = [
 		location: 'Reaktor (Vienna)'
 	},
 	{
+		handle: 'silent',
 		year: '2017',
 		title: 'Silent',
 		type: 'Solo Exhibition',
@@ -175,6 +200,7 @@ export const portfolio = [
 		location: 'Tile Gallery (Vienna)'
 	},
 	{
+		handle: 'love-happiness',
 		year: '2015',
 		title: 'Love & Happiness',
 		type: 'Solo Exhibition',
@@ -182,6 +208,7 @@ export const portfolio = [
 		location: 'Galerie Sonnenfels (Vienna)'
 	},
 	{
+		handle: 'love-doom',
 		year: '2014',
 		title: 'Love & Doom',
 		type: 'Solo Exhibition',
@@ -189,6 +216,7 @@ export const portfolio = [
 		location: 'F6 (Vienna)'
 	},
 	{
+		handle: 'madness-beauty',
 		year: '2013',
 		title: 'Madness & Beauty',
 		type: 'Solo Exhibition',
