@@ -24,7 +24,7 @@
 	/**
 	 * FUNCTIONS
 	 */
-	export function parseCustomTags(text: string): Token[] {
+	function parseCustomTags(text: string): Token[] {
 		if (!text) return [];
 
 		const regex = /\[([a-z]+)\](.*?)\[\/\1\]/g;
@@ -58,14 +58,9 @@
 
 		return tokens;
 	}
-
-	/**
-	 * DERIVED
-	 */
-	let parsedContent = $derived(parseCustomTags(content));
 </script>
 
-{#each parsedContent as part, index (index)}
+{#each parseCustomTags(content) as part, index (index)}
 	{#if part.type === 'text'}
 		{part.content}
 	{:else if allowedTags.includes(part.type)}
