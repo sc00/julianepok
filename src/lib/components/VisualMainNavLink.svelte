@@ -23,8 +23,7 @@
 
 <style lang="scss">
 	.v-main-nav-link {
-		font-size: 1.125rem;
-		line-height: 1.25rem;
+		line-height: 1.25;
 		color: inherit;
 		text-transform: uppercase;
 		text-decoration: none;
