@@ -30,6 +30,9 @@
 		text-transform: lowercase;
 		text-decoration: none;
 		border: solid thin var(--clr-body-text);
+		transition:
+			color 0.15s ease-in-out,
+			background-color 0.15s ease-in-out;
 
 		&:not(:first-of-type) {
 			border-top: none;

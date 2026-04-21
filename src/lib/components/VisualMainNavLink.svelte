@@ -27,6 +27,9 @@
 		color: inherit;
 		text-transform: uppercase;
 		text-decoration: none;
+		transition:
+			color 0.15s ease-in-out,
+			background-color 0.15s ease-in-out;
 
 		&:hover {
 			color: var(--clr-body-text-contrast);
