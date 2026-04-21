@@ -23,8 +23,6 @@
 
 <style lang="scss">
 	.v-list {
-		position: relative;
-
 		&::after {
 			z-index: 1;
 			position: fixed;
