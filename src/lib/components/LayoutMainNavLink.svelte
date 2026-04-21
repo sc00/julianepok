@@ -9,7 +9,7 @@
 	 */
 	interface Props {
 		tag?: string;
-		children?: Snippet;
+		children: Snippet;
 	}
 
 	/**
@@ -18,19 +18,19 @@
 	let { tag = 'div', children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-main-nav">
-	{@render children?.()}
+<svelte:element this={tag} class="l-main-nav-link">
+	{@render children()}
 </svelte:element>
 
 <style lang="scss">
-	.l-main-nav {
-		margin: 0 1rem -0.0625rem 1rem;
+	.l-main-nav-link {
+		display: flex;
+		justify-content: center;
 	}
 
 	@media screen and (min-width: 800px) {
-		.l-main-nav {
+		.l-main-nav-link {
 			display: block;
-			margin: 0 1rem 1rem;
 		}
 	}
 </style>

@@ -25,9 +25,15 @@
 <style lang="scss">
 	.l-main-nav-items {
 		display: grid;
+		gap: 1rem;
 		margin: 0;
 		padding: 0;
-		grid-template-columns: var(--spacing-list-columns);
-		gap: var(--spacing-list-column-gap);
+	}
+
+	@media screen and (min-width: 800px) {
+		.l-main-nav-items {
+			grid-template-columns: var(--spacing-list-columns);
+			gap: var(--spacing-list-column-gap);
+		}
 	}
 </style>

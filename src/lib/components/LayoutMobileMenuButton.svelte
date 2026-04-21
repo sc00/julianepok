@@ -24,13 +24,13 @@
 
 <style lang="scss">
 	.l-main-nav {
-		margin: 0 1rem -0.0625rem 1rem;
+		display: grid;
+		margin: 0 1rem 1rem 1rem;
 	}
 
 	@media screen and (min-width: 800px) {
 		.l-main-nav {
-			display: block;
-			margin: 0 1rem 1rem;
+			display: none;
 		}
 	}
 </style>
