@@ -20,9 +20,3 @@
 <div class="v-main-header">
 	{@render children?.()}
 </div>
-
-<style lang="scss">
-	.v-main-header {
-		background-color: var(--clr-body-background);
-	}
-</style>

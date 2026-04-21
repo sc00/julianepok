@@ -10,6 +10,7 @@
 	import VisualCell from '$lib/components/VisualCell.svelte';
 	import VisualListRow from '$lib/components/VisualListRow.svelte';
 	import VisualListHeader from '$lib/components/VisualListHeader.svelte';
+	import VisualList from '$lib/components/VisualList.svelte';
 
 	/**
 	 * TYPES
@@ -24,27 +25,29 @@
 	const { data }: Props = $props();
 </script>
 
-<LayoutList>
-	<VisualListHeader>
-		<LayoutListRow>
-			<VisualCell>Year</VisualCell>
-			<VisualCell>Title</VisualCell>
-			<VisualCell>Type</VisualCell>
-			<VisualCell>Medium</VisualCell>
-			<VisualCell>Location</VisualCell>
-		</LayoutListRow>
-	</VisualListHeader>
-	<LayoutListBody>
-		{#each data.portfolio as { handle, year, title, type, medium, location }, index (index)}
-			<VisualListRow href="/portfolio/{handle}">
-				<LayoutListRow>
-					<VisualCell>{year}</VisualCell>
-					<VisualCell><CompositionParseContent content={title} /></VisualCell>
-					<VisualCell>{type}</VisualCell>
-					<VisualCell>{medium}</VisualCell>
-					<VisualCell>{location}</VisualCell>
-				</LayoutListRow>
-			</VisualListRow>
-		{/each}
-	</LayoutListBody>
-</LayoutList>
+<VisualList>
+	<LayoutList>
+		<VisualListHeader>
+			<LayoutListRow>
+				<VisualCell>Year</VisualCell>
+				<VisualCell>Title</VisualCell>
+				<VisualCell>Type</VisualCell>
+				<VisualCell>Medium</VisualCell>
+				<VisualCell>Location</VisualCell>
+			</LayoutListRow>
+		</VisualListHeader>
+		<LayoutListBody>
+			{#each data.portfolio as { handle, year, title, type, medium, location }, index (index)}
+				<VisualListRow href="/portfolio/{handle}">
+					<LayoutListRow>
+						<VisualCell>{year}</VisualCell>
+						<VisualCell><CompositionParseContent content={title} /></VisualCell>
+						<VisualCell>{type}</VisualCell>
+						<VisualCell>{medium}</VisualCell>
+						<VisualCell>{location}</VisualCell>
+					</LayoutListRow>
+				</VisualListRow>
+			{/each}
+		</LayoutListBody>
+	</LayoutList>
+</VisualList>
