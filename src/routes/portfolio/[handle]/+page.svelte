@@ -1,7 +1,9 @@
 <script lang="ts">
+	import CompositionParseContent from '$lib/components/CompositionParseContent.svelte';
 	/**
 	 * IMPORTS
 	 */
+	import VisualPortfolioItemTitle from '$lib/components/VisualPortfolioItemTitle.svelte';
 	import { type PageData } from './$types';
 
 	/**
@@ -17,7 +19,9 @@
 	let { data }: Props = $props();
 </script>
 
-<h1>{data.item.title}</h1>
+<VisualPortfolioItemTitle>
+	<CompositionParseContent content={data.item.title} />
+</VisualPortfolioItemTitle>
 
 <div class="gallery"></div>
 
