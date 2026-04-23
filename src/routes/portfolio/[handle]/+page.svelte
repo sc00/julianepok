@@ -1,9 +1,11 @@
 <script lang="ts">
 	import CompositionParseContent from '$lib/components/CompositionParseContent.svelte';
+	import LayoutPortfolioItemHeader from '$lib/components/LayoutPortfolioItemHeader.svelte';
 	/**
 	 * IMPORTS
 	 */
 	import VisualPortfolioItemTitle from '$lib/components/VisualPortfolioItemTitle.svelte';
+	import VisualToggleButton from '$lib/components/VisualToggleButton.svelte';
 	import { type PageData } from './$types';
 
 	/**
@@ -17,11 +19,22 @@
 	 * PROPS
 	 */
 	let { data }: Props = $props();
+
+	/**
+	 * VARIABLES
+	 */
+	let isToggled = $state(false);
 </script>
 
-<VisualPortfolioItemTitle>
-	<CompositionParseContent content={data.item.title} />
-</VisualPortfolioItemTitle>
+<LayoutPortfolioItemHeader tag="header">
+	<VisualToggleButton
+		label={isToggled ? 'Show Gallery' : 'Show Description'}
+		onclick={() => (isToggled = !isToggled)}
+	/>
+	<VisualPortfolioItemTitle>
+		<CompositionParseContent content={data.item.title} />
+	</VisualPortfolioItemTitle>
+</LayoutPortfolioItemHeader>
 
 <div class="gallery"></div>
 

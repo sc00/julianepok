@@ -65,7 +65,6 @@
 	<LayoutMobileMenuButton>
 		<VisualToggleButton
 			label={isMobileMenuOpen ? '×' : 'Menu'}
-			{isMobileMenuOpen}
 			onclick={handleMobileMenuButtonClick}
 		/>
 	</LayoutMobileMenuButton>
