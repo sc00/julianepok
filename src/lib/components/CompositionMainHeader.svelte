@@ -6,6 +6,8 @@
 	import LayoutMainNavItems from './LayoutMainNavItems.svelte';
 	import LayoutMainNavLink from './LayoutMainNavLink.svelte';
 	import LayoutMobileMenuButton from './LayoutMobileMenuButton.svelte';
+	import LayoutOverlay from './LayoutOverlay.svelte';
+	import VisualBlur from './VisualBlur.svelte';
 	import VisualMainHeader from './VisualMainHeader.svelte';
 	import VisualMainNav from './VisualMainNav.svelte';
 	import VisualMainNavLink from './VisualMainNavLink.svelte';
@@ -67,4 +69,7 @@
 			onclick={handleMobileMenuButtonClick}
 		/>
 	</LayoutMobileMenuButton>
+	<LayoutOverlay isVisible={isMobileMenuOpen} zIndex={-1}>
+		<VisualBlur isVisible={isMobileMenuOpen} />
+	</LayoutOverlay>
 </LayoutMainHeader>
