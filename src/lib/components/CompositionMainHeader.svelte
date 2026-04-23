@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { afterNavigate } from '$app/navigation';
 	import { type NavItem } from '$lib/types';
+	import LayoutLogoLink from './LayoutLogoLink.svelte';
 	import LayoutMainHeader from './LayoutMainHeader.svelte';
 	import LayoutMainNav from './LayoutMainNav.svelte';
 	import LayoutMainNavItems from './LayoutMainNavItems.svelte';
@@ -8,6 +9,8 @@
 	import LayoutMobileMenuButton from './LayoutMobileMenuButton.svelte';
 	import LayoutOverlay from './LayoutOverlay.svelte';
 	import VisualBlur from './VisualBlur.svelte';
+	import VisualLogo from './VisualLogo.svelte';
+	import VisualLogoLink from './VisualLogoLink.svelte';
 	import VisualMainHeader from './VisualMainHeader.svelte';
 	import VisualMainNav from './VisualMainNav.svelte';
 	import VisualMainNavLink from './VisualMainNavLink.svelte';
@@ -45,6 +48,12 @@
 		isMobileMenuOpen = false;
 	});
 </script>
+
+<LayoutLogoLink>
+	<VisualLogoLink>
+		<VisualLogo />
+	</VisualLogoLink>
+</LayoutLogoLink>
 
 <LayoutMainHeader>
 	<VisualMainHeader>

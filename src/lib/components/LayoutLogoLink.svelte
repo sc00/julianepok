@@ -18,14 +18,16 @@
 	let { tag = 'div', children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-portfolio-item-header">
+<svelte:element this={tag} class="l-logo">
 	{@render children()}
 </svelte:element>
 
 <style lang="scss">
-	.l-portfolio-item-header {
+	.l-logo {
+		position: fixed;
+		inset: 1.25rem 1.75rem auto auto;
 		display: grid;
-		grid-template-columns: 18rem max-content;
-		justify-content: space-between;
+		width: 1rem;
+		height: 1rem;
 	}
 </style>
