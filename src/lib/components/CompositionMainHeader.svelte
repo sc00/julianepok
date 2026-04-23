@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { afterNavigate } from '$app/navigation';
 	import { type NavItem } from '$lib/types';
+	import { afterNavigate } from '$app/navigation';
 	import LayoutLogoLink from './LayoutLogoLink.svelte';
 	import LayoutMainHeader from './LayoutMainHeader.svelte';
 	import LayoutMainNav from './LayoutMainNav.svelte';
