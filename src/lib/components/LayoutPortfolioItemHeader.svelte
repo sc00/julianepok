@@ -25,7 +25,9 @@
 <style lang="scss">
 	.l-portfolio-item-header {
 		display: grid;
-		grid-template-columns: 18rem max-content;
-		justify-content: space-between;
+		grid-template-columns: max-content 10rem;
+		grid-template-rows: 1.25rem;
+		align-items: start;
+		gap: 0.625rem;
 	}
 </style>

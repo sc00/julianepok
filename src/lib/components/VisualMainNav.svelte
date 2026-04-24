@@ -25,6 +25,7 @@
 <style lang="scss">
 	.v-main-nav {
 		padding: 1.25rem;
+		line-height: 1.25rem;
 		border: solid thin var(--clr-body-text);
 		opacity: 0;
 		pointer-events: none;
@@ -39,7 +40,7 @@
 
 	@media screen and (min-width: 800px) {
 		.v-main-nav {
-			padding: 0.5rem var(--spacing-list-indent) 0.75rem;
+			padding: 0.4375rem var(--spacing-list-indent) 0.5625rem;
 			opacity: 1;
 			pointer-events: all;
 		}

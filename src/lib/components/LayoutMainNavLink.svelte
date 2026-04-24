@@ -26,6 +26,7 @@
 	.l-main-nav-link {
 		display: flex;
 		justify-content: center;
+		height: 1.25rem;
 	}
 
 	@media screen and (min-width: 800px) {

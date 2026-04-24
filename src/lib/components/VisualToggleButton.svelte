@@ -21,7 +21,8 @@
 
 <style lang="scss">
 	.v-toggle-button {
-		padding: 0.5rem var(--spacing-list-indent) 0.75rem;
+		padding: 0.4375rem 1rem 0.5625rem;
+		line-height: 1.25rem;
 		text-transform: uppercase;
 		white-space: nowrap;
 		background-color: transparent;

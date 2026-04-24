@@ -23,10 +23,11 @@
 
 <style lang="scss">
 	.v-portfolio-item-title {
-		padding: 0 3.5rem;
-		font-size: 1.125rem;
+		padding: 0.4375rem var(--spacing-list-indent) 0.5625rem;
+		font-size: 1rem;
 		font-weight: 400;
-		line-height: 1.25;
+		line-height: 1.25rem;
 		text-transform: lowercase;
+		border: solid thin;
 	}
 </style>
