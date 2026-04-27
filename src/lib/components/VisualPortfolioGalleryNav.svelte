@@ -3,7 +3,7 @@
 	 * IMPORTS
 	 */
 	import type { Snippet } from 'svelte';
-	import { resolve } from '$app/paths';
+
 	/**
 	 * TYPES
 	 */
@@ -17,12 +17,11 @@
 	let { children }: Props = $props();
 </script>
 
-<a href={resolve('/')} class="visual-logo-link">
+<nav class="v-portfolio-gallery-nav">
 	{@render children?.()}
-</a>
+</nav>
 
 <style lang="scss">
-	.v-logo-link {
-		text-decoration: none;
+	.v-portfolio-gallery-nav {
 	}
 </style>

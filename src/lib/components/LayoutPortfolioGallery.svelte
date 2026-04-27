@@ -3,26 +3,28 @@
 	 * IMPORTS
 	 */
 	import type { Snippet } from 'svelte';
-	import { resolve } from '$app/paths';
+
 	/**
 	 * TYPES
 	 */
 	interface Props {
+		tag?: string;
 		children?: Snippet;
 	}
 
 	/**
 	 * PROPS
 	 */
-	let { children }: Props = $props();
+	let { tag = 'div', children }: Props = $props();
 </script>
 
-<a href={resolve('/')} class="visual-logo-link">
+<svelte:element this={tag} class="l-portfolio-gallery">
 	{@render children?.()}
-</a>
+</svelte:element>
 
 <style lang="scss">
-	.v-logo-link {
-		text-decoration: none;
+	.l-portfolio-gallery {
+		position: fixed;
+		inset: 0;
 	}
 </style>

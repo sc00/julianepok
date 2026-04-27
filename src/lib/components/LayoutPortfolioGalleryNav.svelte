@@ -18,12 +18,15 @@
 	let { tag = 'div', children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-measure">
+<svelte:element this={tag} class="l-portfolio-gallery-nav">
 	{@render children?.()}
 </svelte:element>
 
 <style lang="scss">
-	.l-measure {
-		max-width: 55ch;
+	.l-portfolio-gallery-nav {
+		z-index: 10;
+		position: absolute;
+		inset: 50% 1rem auto;
+		translate: 0 -50%;
 	}
 </style>

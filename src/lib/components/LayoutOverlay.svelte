@@ -11,7 +11,7 @@
 		tag?: string;
 		zIndex?: number;
 		isVisible?: boolean;
-		children: Snippet;
+		children?: Snippet;
 	}
 
 	/**
@@ -21,7 +21,7 @@
 </script>
 
 <svelte:element this={tag} class="l-overlay" style="z-index: {zIndex}" aria-hidden={!isVisible}>
-	{@render children()}
+	{@render children?.()}
 </svelte:element>
 
 <style lang="scss">

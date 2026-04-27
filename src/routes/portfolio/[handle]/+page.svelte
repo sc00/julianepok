@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CompositionParseContent from '$lib/components/CompositionParseContent.svelte';
 	import CompositionPortfolioItemDescription from '$lib/components/CompositionPortfolioItemDescription.svelte';
+	import CompositionPortfolioItemGallery from '$lib/components/CompositionPortfolioGallery.svelte';
 	import LayoutPortfolioItemHeader from '$lib/components/LayoutPortfolioItemHeader.svelte';
 	import VisualFade from '$lib/components/VisualFade.svelte';
 	/**
@@ -40,7 +41,16 @@
 
 {#if !isToggled}
 	<VisualFade fadeIn={{ duration: 150, delay: 150 }} fadeOut={{ duration: 150 }}>
-		<div class="gallery"></div>
+		<CompositionPortfolioItemGallery
+			handle="meer-als"
+			items={[
+				{ fileName: '1.jpg', alt: '', width: 3000, height: 3000 },
+				{ fileName: '2.jpg', alt: '', width: 3000, height: 3000 },
+				{ fileName: '3.jpg', alt: '', width: 3000, height: 3000 },
+				{ fileName: '4.jpg', alt: '', width: 3000, height: 3000 },
+				{ fileName: '5.jpg', alt: '', width: 3000, height: 3000 }
+			]}
+		/>
 	</VisualFade>
 {:else}
 	<VisualFade fadeIn={{ duration: 150, delay: 150 }} fadeOut={{ duration: 150 }}>

@@ -18,12 +18,19 @@
 	let { tag = 'div', children }: Props = $props();
 </script>
 
-<svelte:element this={tag} class="l-measure">
+<svelte:element this={tag} class="l-portfolio-gallery-image">
 	{@render children?.()}
 </svelte:element>
 
 <style lang="scss">
-	.l-measure {
-		max-width: 55ch;
+	.l-portfolio-gallery-image {
+		--portfolio-gallery-image-width: 100vw;
+		--portfolio-gallery-image-height: 100vh;
+
+		position: absolute;
+		inset: 0;
+		display: grid;
+		align-items: stretch;
+		justify-content: stretch;
 	}
 </style>

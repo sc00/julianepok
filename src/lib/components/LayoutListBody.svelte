@@ -9,7 +9,7 @@
 	 */
 	interface Props {
 		tag?: string;
-		children: Snippet;
+		children?: Snippet;
 	}
 
 	/**
@@ -19,7 +19,7 @@
 </script>
 
 <svelte:element this={tag} class="l-list-body">
-	{@render children()}
+	{@render children?.()}
 </svelte:element>
 
 <style lang="scss">

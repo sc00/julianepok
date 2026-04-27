@@ -8,7 +8,7 @@
 	 * TYPES
 	 */
 	interface Props {
-		children: Snippet;
+		children?: Snippet;
 	}
 
 	/**
@@ -18,7 +18,7 @@
 </script>
 
 <h1 class="v-portfolio-item-title">
-	{@render children()}
+	{@render children?.()}
 </h1>
 
 <style lang="scss">
