@@ -28,7 +28,7 @@
 			position: fixed;
 			display: block;
 			inset: auto 1rem 0;
-			height: 3.75rem;
+			height: 3.25rem;
 			content: '';
 			background-color: var(--clr-body-background);
 		}

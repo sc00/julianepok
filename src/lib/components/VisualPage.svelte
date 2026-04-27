@@ -23,7 +23,7 @@
 
 <style lang="scss">
 	.v-page {
-		padding: 1rem 1rem 3.6875rem;
+		padding: 1rem 1rem 3.1875rem;
 		color: var(--clr-body-text);
 	}
 </style>

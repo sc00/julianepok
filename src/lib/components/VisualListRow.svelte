@@ -26,7 +26,7 @@
 
 <style lang="scss">
 	.v-list-row {
-		padding: 0.75rem var(--spacing-list-indent);
+		padding: 0.5625rem var(--spacing-list-indent) 0.625rem;
 		text-transform: lowercase;
 		text-decoration: none;
 		border: solid thin var(--clr-body-text);
