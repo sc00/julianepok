@@ -24,7 +24,7 @@
 
 <style lang="scss">
 	.l-main-header {
-		z-index: 9999;
+		z-index: 1000;
 		position: fixed;
 		inset: auto 0 0 0;
 		display: grid;

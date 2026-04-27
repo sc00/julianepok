@@ -24,6 +24,7 @@
 
 <style lang="scss">
 	.l-logo {
+		z-index: 1000;
 		position: fixed;
 		inset: 1.25rem 1.75rem auto auto;
 		display: grid;

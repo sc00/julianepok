@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CompositionParseContent from '$lib/components/CompositionParseContent.svelte';
+	import CompositionPortfolioItemDescription from '$lib/components/CompositionPortfolioItemDescription.svelte';
 	import LayoutPortfolioItemHeader from '$lib/components/LayoutPortfolioItemHeader.svelte';
 	/**
 	 * IMPORTS
@@ -39,7 +40,7 @@
 {#if !isToggled}
 	<div class="gallery"></div>
 {:else}
-	<p>
+	<CompositionPortfolioItemDescription>
 		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, commodi eos? Modi nam
 		eligendi, accusantium non, sit ullam eos velit consectetur incidunt saepe culpa doloremque
 		labore architecto pariatur expedita aut? Doloribus, optio velit. Aliquid quos dolorum et
@@ -80,7 +81,7 @@
 		pariatur ratione aut doloremque, dolore error hic provident labore minima modi explicabo nostrum
 		id tempora facere reiciendis alias ut temporibus? Officia maxime unde sunt perspiciatis optio
 		ratione animi id praesentium architecto modi, quam, dolor hic beatae nihil.
-	</p>
+	</CompositionPortfolioItemDescription>
 {/if}
 
 <style lang="scss">
