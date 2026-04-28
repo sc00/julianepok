@@ -5,10 +5,12 @@
 	import LayoutPortfolioGallery from './LayoutPortfolioGallery.svelte';
 	import LayoutPortfolioGalleryImage from './LayoutPortfolioGalleryImage.svelte';
 	import LayoutPortfolioGalleryNav from './LayoutPortfolioGalleryNav.svelte';
+	import LayoutPortfolioGalleryNavButton from './LayoutPortfolioGalleryNavButton.svelte';
 	import LayoutPortfolioGalleryNavItems from './LayoutPortfolioGalleryNavItems.svelte';
 	import VisualPlainListItem from './VisualPlainListItem.svelte';
 	import VisualPortfolioGalleryImage from './VisualPortfolioGalleryImage.svelte';
 	import VisualPortfolioGalleryNav from './VisualPortfolioGalleryNav.svelte';
+	import VisualPortfolioGalleryNavButton from './VisualPortfolioGalleryNavButton.svelte';
 
 	/**
 	 * TYPES
@@ -60,10 +62,22 @@
 		<VisualPortfolioGalleryNav>
 			<LayoutPortfolioGalleryNavItems tag="ul">
 				<VisualPlainListItem>
-					<button type="button" onclick={goToPrevImage}>Prev</button>
+					<LayoutPortfolioGalleryNavButton>
+						<VisualPortfolioGalleryNavButton
+							type="prev"
+							ariaLabel="Show previous image"
+							onclick={goToPrevImage}
+						/>
+					</LayoutPortfolioGalleryNavButton>
 				</VisualPlainListItem>
 				<VisualPlainListItem>
-					<button type="button" onclick={goToNextImage}>Next</button>
+					<LayoutPortfolioGalleryNavButton>
+						<VisualPortfolioGalleryNavButton
+							type="next"
+							ariaLabel="Show next image"
+							onclick={goToNextImage}
+						/>
+					</LayoutPortfolioGalleryNavButton>
 				</VisualPlainListItem>
 			</LayoutPortfolioGalleryNavItems>
 		</VisualPortfolioGalleryNav>
