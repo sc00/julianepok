@@ -17,6 +17,11 @@
 	 */
 	const mainNavItems: NavItem[] = [
 		{
+			text: 'Index',
+			href: '/',
+			hideOnDesktop: true
+		},
+		{
 			text: 'About',
 			href: '/about'
 		},

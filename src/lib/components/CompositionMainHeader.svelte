@@ -14,7 +14,7 @@
 	import VisualMainHeader from './VisualMainHeader.svelte';
 	import VisualMainNav from './VisualMainNav.svelte';
 	import VisualMainNavLink from './VisualMainNavLink.svelte';
-	import VisualPlainListItem from './VisualPlainListItem.svelte';
+	import VisualMainNavItem from './VisualMainNavItem.svelte';
 	import VisualToggleButton from './VisualToggleButton.svelte';
 
 	/**
@@ -60,12 +60,12 @@
 		<LayoutMainNav>
 			<VisualMainNav {isMobileMenuOpen}>
 				<LayoutMainNavItems tag="ul">
-					{#each mainNavItems as { text, href }, index (index)}
-						<VisualPlainListItem>
+					{#each mainNavItems as { text, href, hideOnDesktop }, index (index)}
+						<VisualMainNavItem {hideOnDesktop}>
 							<LayoutMainNavLink>
 								<VisualMainNavLink {text} {href} />
 							</LayoutMainNavLink>
-						</VisualPlainListItem>
+						</VisualMainNavItem>
 					{/each}
 				</LayoutMainNavItems>
 			</VisualMainNav>
