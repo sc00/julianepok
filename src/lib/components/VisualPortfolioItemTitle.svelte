@@ -27,6 +27,7 @@
 		font-size: 1rem;
 		font-weight: 400;
 		line-height: 1.25rem;
+		text-align: center;
 		text-transform: lowercase;
 		border: solid thin;
 	}

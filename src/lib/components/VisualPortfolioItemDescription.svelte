@@ -23,8 +23,8 @@
 
 <style lang="scss">
 	.v-portfolio-item-description {
-		padding: 4rem 0 2.5rem;
-		font-size: 1.75rem;
+		padding: 6rem 0 2.5rem;
+		font-size: 1.375rem;
 
 		&::before {
 			z-index: 1;
@@ -51,6 +51,13 @@
 				var(--clr-body-background) 30%,
 				var(--clr-body-background) 100%
 			);
+		}
+	}
+
+	@media screen and (min-width: 800px) {
+		.v-portfolio-item-description {
+			padding: 4rem 0 2.5rem;
+			font-size: 1.75rem;
 		}
 	}
 </style>
