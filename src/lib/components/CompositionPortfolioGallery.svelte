@@ -82,17 +82,15 @@
 			</LayoutPortfolioGalleryNavItems>
 		</VisualPortfolioGalleryNav>
 	</LayoutPortfolioGalleryNav>
+
 	<LayoutPortfolioGalleryImage>
-		<VisualPortfolioGalleryImage
-			src="/assets/portfolio/{handle}/{items[currentIndex].fileName}"
-			width={items[currentIndex].width}
-			height={items[currentIndex].height}
-		/>
+		{#key currentIndex}
+			<VisualPortfolioGalleryImage
+				src="/assets/portfolio/{handle}/{items[currentIndex].fileName}"
+				width={items[currentIndex].width}
+				height={items[currentIndex].height}
+				fadeOptions={{ duration: 300 }}
+			/>
+		{/key}
 	</LayoutPortfolioGalleryImage>
 </LayoutPortfolioGallery>
-
-<style lang="scss">
-	button {
-		width: 4rem;
-	}
-</style>

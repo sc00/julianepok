@@ -24,6 +24,7 @@
 
 <style lang="scss">
 	.l-portfolio-gallery-image {
+		--portfolio-gallery-image-grid-area: 1 / 1;
 		--portfolio-gallery-image-width: 100vw;
 		--portfolio-gallery-image-height: 100vh;
 
